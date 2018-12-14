@@ -1,6 +1,6 @@
 import fs = require("fs");
 import path = require("path");
-import { Listable, ServerListing } from "../common/Listable";
+import {Listable, ServerListing} from "../common/Listable";
 
 const sourceAbbreviations = {
     "monster-manual": "mm",
@@ -20,30 +20,37 @@ const createId = (name: string, source: string) => {
 interface Combatant {
     Alias: string;
 }
+
 export interface SavedEncounter extends Listable {
     Combatants: Combatant [];
 }
 
-export const GetEncounterKeywords = (encounter: SavedEncounter) => (encounter.Combatants || []).map(c => c.Alias).join(" "); 
+export const GetEncounterKeywords = (encounter: SavedEncounter) => (encounter.Combatants || []).map(c => c.Alias).join(" ");
 
 export class Library<TItem extends Listable> {
     private items: { [id: string]: TItem } = {};
     private listings: ServerListing[] = [];
-    
-    constructor(private route: string, private getKeywords: (item: TItem) => string) { }
 
-    public static FromFile<I extends Listable>(filename: string, route: string, getKeywords: (item: I) => string): Library<I> {
+    constructor(private route: string, private getKeywords: (item: TItem) => string) {
+    }
+
+    public static FromFile<I extends Listable>(filename: any, route: string, getKeywords: (item: I) => string): Library<I> {
         const library = new Library<I>(route, getKeywords);
 
-        const filePath = path.join(__dirname, "..", filename);
+        // Pull the list of potential library sources together.
+        const files: string [] = typeof filename === 'string' ? [filename] : filename;
 
-        fs.readFile(filePath, (err, buffer) => {
-            if (err) {
-                throw `Couldn't read ${filePath} as a library: ${err}`;
-            }
+        files.forEach((file, i) => {
+            const filePath = path.join(__dirname, "..", file);
 
-            const newItems: any [] = JSON.parse(buffer.toString());
-            library.Add(newItems);
+            fs.readFile(filePath, (err, buffer) => {
+                if (err) {
+                    throw `Couldn't read ${filePath} as a library: ${err}`;
+                }
+
+                const newItems: any [] = JSON.parse(buffer.toString());
+                library.Add(newItems);
+            });
         });
 
         return library;

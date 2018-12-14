@@ -1,11 +1,13 @@
 [
   {
     "Name": "Da'sani Watah",
-    "Type": "Genasi Cleric",
+    "Type": "Genasi Death Cleric",
     "HP": {
       "Value": 39,
       "Notes": ""
     },
+    "InitiativeModifier": 1,
+    "InitiativeAdvantage": false,
     "AC": {
       "Value": 18,
       "Notes": "(chain mail, arrow-catching shield)"
@@ -132,16 +134,55 @@
       "Elvish",
       "Primordial"
     ],
+    "DamageResistances": [
+      "Acid"
+    ],
     "Traits": [
       {
+        "Name": "Spellcasting",
+        "Content": "You can cast prepared cleric spells using WIS as your spellcasting modifier (Spell DC 14, Spell Attack +6) and prepared cleric spells as rituals if they have the ritual tag. You can use a holy symbol as a spellcasting focus."
+      },
+      {
+        "Name": "Divine Domain: Death",
+        "Content": "You choose a divine domain that grants you additional spells and other features related to your deity."
+      },
+      {
+        "Name": "Bonus Proficiency",
+        "Content": "You gain proficiency with martial weapons."
+      },
+      {
+        "Name": "Reaper",
+        "Content": "You learn one necromancy cantrip from any spell list. When you cast a necromancy cantrip that normally targets only one creature, it can instead target two creatures within 5 ft. of each other. Cantrip: Toll the Dead"
+      },
+      {
+        "Name": "Channel Divinity: Touch of Death",
+        "Content": "When you hit a creature with a melee attack, you can spend a Channel Divinity use to deal an extra 13 points of necrotic damage."
+      },
+      {
+        "Name": "Spell Sniper (Cleric, Druid)",
+        "Content": "When you cast a spell that requires you to make an attack roll, the spell's range is doubled. Your ranged spell attacks ignore half cover and three-quarters cover. You learn one cantrip that requires an attack roll from your chosen class spell list (WIS is your spellcasting ability for it)."
+      },
+      {
         "Name": "Amphibious",
-        "Content": "You can breathe air and water.",
-        "Usage": ""
+        "Content": "You can breathe air and water."
       },
       {
         "Name": "Acid Resistance",
-        "Content": "You have resistance to acid damage.",
-        "Usage": ""
+        "Content": "You have resistance to acid damage."
+      },
+      {
+        "Name": "Call to the Wave\n",
+        "Content": "You know the shape water cantrip. You can cast create or destroy water (2nd) once per long rest. CON is your spellcasting ability.\n\n"
+      }
+    ],
+    "Actions": [
+      {
+        "Name": "Channel Divinity: Turn Undead\n",
+        "Content": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a WIS saving throw (DC 14). If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+      },
+      {
+        "Name": "Cleric Spells",
+        "Content": "Cantrips\n\nGuidance\nLight\nShape Water\nSpare the Dying\nThorn Whip\nToll the Dead\nWord of Radiance\n\n1st\nCeremony\nCommand\nFalse Life\nGuiding Bolt\nRay of Sickness\n\n2nd\nBlindness/Deafness\nCommand (+1 target)\nCreate or Destroy Water\nFalse Life (1d4+9)\nGuiding Bolt (5d6)\nPrayer of Healing\nRay of Enfeeblement\nRay of Sickness (3d8)\nSpiritual Weapon"
       }
     ]
   },

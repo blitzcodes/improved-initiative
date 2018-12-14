@@ -87,9 +87,11 @@ export class StatBlockComponent extends React.Component<StatBlockProps, StatBloc
                     .map(modifierType =>
                         <div key={modifierType.name} className={modifierType.name}>
                             <span className="stat-label">{modifierType.name}</span>
+                            <div className="stat-block">
                             {modifierType.data.map((modifier, i) =>
-                                <span key={i + modifier.Name}>{modifier.Name}{enricher.EnrichModifier(modifier.Modifier)} </span>
+                                <span key={i + modifier.Name} className="stat-modifier">{modifier.Name}{enricher.EnrichModifier(modifier.Modifier)} </span>
                             )}
+                            </div>
                         </div>
                     )}
             </div>
@@ -100,7 +102,9 @@ export class StatBlockComponent extends React.Component<StatBlockProps, StatBloc
                     .map(keywordSetType =>
                         <div key={keywordSetType.name} className={keywordSetType.name}>
                             <span className="stat-label">{keywordSetType.name}</span>
-                            {keywordSetType.data.join(", ")}
+                            {keywordSetType.data.map(statType=>
+                                <span className="stat-type">{statType}</span>
+                            )}
                         </div>
                     )}
             </div>

@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
 
-  .c-statblock-header__portrait{
+  .c-statblock-header__portrait {
     max-height: 4rem;
     padding: @small-spacer;
     cursor: zoom-in;
@@ -24,8 +24,8 @@
 }
 
 .combatant-details__wrapper {
-  overflow-y:auto;
-  overflow-x:hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .c-combatant-details__hp, .c-combatant-details__tags {
@@ -64,7 +64,7 @@
   flex-shrink: 1;
   overflow-y: auto;
   max-width: @fixed-column-width;
-  
+
   h3,
   h4 {
     display: flex;
@@ -141,6 +141,51 @@
     div {
       flex-direction: row;
       flex-wrap: wrap;
+
+      &:not(:first-of-type) {
+        margin-top: .5rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: .5rem;
+      }
+
+      .stat-label {
+        flex: 0 0 100%;
+      }
+
+      .stat-modifier {
+        text-align: right;
+        font-size: .75rem;
+        line-height: 2;
+        padding-right: 0.8rem;
+      }
+
+
+    }
+  }
+
+  .Saves {
+    .stat-block {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+
+    .stat-modifier {
+      flex: 0 0 33.33%;
+      font-size: .85rem;
+    }
+  }
+
+  .Skills {
+    .stat-modifier {
+      flex: 0 0 50%;
+    }
+  }
+
+  .keyword-sets > div {
+    .stat-type {
+      flex: 0 0 100%;
     }
   }
 
@@ -173,6 +218,7 @@
           content: '.';
         }
       }
+
       div {
         display: block;
       }

@@ -1,0 +1,93 @@
+[
+  {
+    "Name": "Toll the Dead",
+    "CastingTime": "1 action",
+    "Classes": [
+      "Cleric"
+    ],
+    "Components": "V, S",
+    "Description": "You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.\n\nThe spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).",
+    "Duration": "Instantaneous",
+    "Level": 0,
+    "Range": "60 feet",
+    "Ritual": false,
+    "School": "Necromancy",
+    "Source": "Supplemental"
+  },
+  {
+    "Name": "Shape Water",
+    "CastingTime": "1 action",
+    "Classes": [
+      "Cleric",
+      "Racial"
+    ],
+    "Components": "S",
+    "Description": "You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\n\nYou instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn’t have enough force to cause damage.\n\nYou cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.\n\nYou change the water’s color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.\n\nYou freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.\n\nIf you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+    "Duration": "Instantaneous",
+    "Level": 0,
+    "Range": "30 ft/5 ft cube",
+    "Ritual": false,
+    "School": "Transmutation",
+    "Source": "Supplemental"
+  },
+  {
+    "Name": "Thorn Whip",
+    "CastingTime": "1 action",
+    "Classes": [
+      "Cleric"
+    ],
+    "Components": "V, S, M (the stem of a plant with thorns)",
+    "Description": "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.\n\nThe spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "Duration": "Instantaneous",
+    "Level": 0,
+    "Range": "60 ft",
+    "Ritual": false,
+    "School": "Transmutation",
+    "Source": "Supplemental"
+  },
+  {
+    "Name": "Word of Radiance",
+    "CastingTime": "1 action",
+    "Classes": [
+      "Cleric"
+    ],
+    "Components": "V, M (a holy symbol)",
+    "Description": "You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.\n\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "Duration": "Instantaneous",
+    "Level": 0,
+    "Range": "5 ft",
+    "Ritual": false,
+    "School": "Evocation",
+    "Source": "Supplemental"
+  },
+  {
+    "Name": "Ceremony",
+    "CastingTime": "1 hour",
+    "Classes": [
+      "Cleric"
+    ],
+    "Components": "V, S, M(25 gp worth of powdered silver, which the spell consumes)",
+    "Description": "You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.\n\nAtonement. You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom (Insight) check. On a successful check, you restore the target to its original alignment.\n\nBless Water. You touch one vial of water and cause it to become holy water.\n\nComing of Age. You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a d4 and add the number rolled to the ability check. A creature can benefit from this rite only once.\n\nDedication. You touch one humanoid who wishes to be dedicated to your god’s service. For the next 24 hours, whenever the target makes a saving throw, it can roll a d4 and add the number rolled to the save. A creature can benefit from this rite only once.\n\nFuneral Rite. You touch one corpse, and for the next 7 days, the target can’t become undead by any means short of a wish spell.\n\nWedding. You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed.",
+    "Duration": "Instantaneous",
+    "Level": 1,
+    "Range": "Touch",
+    "Ritual": true,
+    "School": "Abjuration",
+    "Source": "Supplemental"
+  },
+  {
+    "Name": "Ray of Sickness",
+    "CastingTime": "1 action",
+    "Classes": [
+      "Cleric"
+    ],
+    "Components": "V, S",
+    "Description": "A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+    "Duration": "Instantaneous",
+    "Level": 1,
+    "Range": "120 ft",
+    "Ritual": false,
+    "School": "Necromancy",
+    "Source": "Supplemental"
+  }
+]
