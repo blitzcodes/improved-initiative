@@ -1,23 +1,171 @@
 [
   {
+    "Name": "Da'sani Watah",
+    "Type": "Genasi Cleric",
+    "HP": {
+      "Value": 39,
+      "Notes": ""
+    },
+    "AC": {
+      "Value": 18,
+      "Notes": "(chain mail, arrow-catching shield)"
+    },
+    "Speed": [
+      "30 ft.",
+      "Swim 30 ft."
+    ],
+    "Abilities": {
+      "Str": 16,
+      "Dex": 12,
+      "Con": 19,
+      "Cha": 10,
+      "Int": 19,
+      "Wis": 8
+    },
+    "Saves": [
+      {
+        "Name": "Str",
+        "Modifier": 3
+      },
+      {
+        "Name": "Dex",
+        "Modifier": 1
+      },
+      {
+        "Name": "Con",
+        "Modifier": 4
+      },
+      {
+        "Name": "Int",
+        "Modifier": 0
+      },
+      {
+        "Name": "Wis",
+        "Modifier": 6
+      },
+      {
+        "Name": "Cha",
+        "Modifier": 1
+      }
+    ],
+    "Skills": [
+      {
+        "Name": "Acrobatics (Dex)",
+        "Modifier": 1
+      },
+      {
+        "Name": "Animal Handling (Wis)",
+        "Modifier": 4
+      },
+      {
+        "Name": "Arcana (Int)",
+        "Modifier": 0
+      },
+      {
+        "Name": "Athletics (Str)",
+        "Modifier": 3
+      },
+      {
+        "Name": "Deception (Cha)",
+        "Modifier": -1
+      },
+      {
+        "Name": "History (Int)",
+        "Modifier": 0
+      },
+      {
+        "Name": "Insight (Wis)",
+        "Modifier": 4
+      },
+      {
+        "Name": "Intimidation (Cha)",
+        "Modifier": -1
+      },
+      {
+        "Name": "Investigation (Int)",
+        "Modifier": 0
+      },
+      {
+        "Name": "Medicine (Wis)",
+        "Modifier": 6
+      },
+      {
+        "Name": "Nature (Int)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Perception (Wis)",
+        "Modifier": 4
+      },
+      {
+        "Name": "Performance (Cha)",
+        "Modifier": -1
+      },
+      {
+        "Name": "Persuasion (Cha)",
+        "Modifier": 1
+      },
+      {
+        "Name": "Religion (Int)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Slight of Hand (Dex)",
+        "Modifier": 1
+      },
+      {
+        "Name": "Stealth (Dex)",
+        "Modifier": 1
+      },
+      {
+        "Name": "Survival (Wis)",
+        "Modifier": 4
+      }
+    ],
+    "Senses": [
+      "Passive Perception): 14",
+      "Passive Investigation: 10",
+      "Passive Insight: 14"
+    ],
+    "Languages": [
+      "Common",
+      "Elvish",
+      "Primordial"
+    ],
+    "Traits": [
+      {
+        "Name": "Amphibious",
+        "Content": "You can breathe air and water.",
+        "Usage": ""
+      },
+      {
+        "Name": "Acid Resistance",
+        "Content": "You have resistance to acid damage.",
+        "Usage": ""
+      }
+    ]
+  },
+  {
     "Name": "Gregorr",
     "Type": "Human Fighter",
     "HP": {
-        "Value": 12,
-        "Notes": ""
+      "Value": 12,
+      "Notes": ""
     },
     "AC": {
-        "Value": 17,
-        "Notes": "(chain mail)"
+      "Value": 17,
+      "Notes": "(chain mail)"
     },
-    "Speed": ["30 ft."],
+    "Speed": [
+      "30 ft."
+    ],
     "Abilities": {
-        "Str": 16,
-        "Dex": 9,
-        "Con": 15,
-        "Cha": 14,
-        "Int": 11,
-        "Wis": 13
+      "Str": 16,
+      "Dex": 9,
+      "Con": 15,
+      "Cha": 14,
+      "Int": 11,
+      "Wis": 13
     },
     "Saves": [
       {
@@ -40,7 +188,11 @@
       }
     ],
     "Senses": [],
-    "Languages": ["Common", "Draconic", "Dwarvish"],
+    "Languages": [
+      "Common",
+      "Draconic",
+      "Dwarvish"
+    ],
     "Actions": [],
     "Reactions": [],
     "LegendaryActions": [],
@@ -51,21 +203,23 @@
     "Name": "Shem",
     "Type": "Hill Dwarf Cleric",
     "HP": {
-        "Value": 11,
-        "Notes": ""
+      "Value": 11,
+      "Notes": ""
     },
     "AC": {
-        "Value": 18,
-        "Notes": "(chain mail, shield)"
+      "Value": 18,
+      "Notes": "(chain mail, shield)"
     },
-    "Speed": ["25 ft."],
+    "Speed": [
+      "25 ft."
+    ],
     "Abilities": {
-        "Str": 14,
-        "Dex": 8,
-        "Con": 15,
-        "Cha": 12,
-        "Int": 10,
-        "Wis": 16
+      "Str": 14,
+      "Dex": 8,
+      "Con": 15,
+      "Cha": 12,
+      "Int": 10,
+      "Wis": 16
     },
     "Saves": [
       {
@@ -88,7 +242,10 @@
       }
     ],
     "Senses": [],
-    "Languages": ["Common", "Dwarvish"],
+    "Languages": [
+      "Common",
+      "Dwarvish"
+    ],
     "Actions": [],
     "Reactions": [],
     "LegendaryActions": [],
@@ -99,21 +256,23 @@
     "Name": "Underfoot",
     "Type": "Lightfoot Halfling Rogue",
     "HP": {
-        "Value": 9,
-        "Notes": ""
+      "Value": 9,
+      "Notes": ""
     },
     "AC": {
-        "Value": 14,
-        "Notes": "(leather armor)"
+      "Value": 14,
+      "Notes": "(leather armor)"
     },
-    "Speed": ["25 ft."],
+    "Speed": [
+      "25 ft."
+    ],
     "Abilities": {
-        "Str": 8,
-        "Dex": 16,
-        "Con": 12,
-        "Cha": 16,
-        "Int": 13,
-        "Wis": 10
+      "Str": 8,
+      "Dex": 16,
+      "Con": 12,
+      "Cha": 16,
+      "Int": 13,
+      "Wis": 10
     },
     "Saves": [
       {
@@ -136,7 +295,10 @@
       }
     ],
     "Senses": [],
-    "Languages": ["Common", "Halfling"],
+    "Languages": [
+      "Common",
+      "Halfling"
+    ],
     "Actions": [],
     "Reactions": [],
     "LegendaryActions": [],
@@ -147,21 +309,23 @@
     "Name": "Ellumyr",
     "Type": "High Elf Wizard",
     "HP": {
-        "Value": 8,
-        "Notes": ""
+      "Value": 8,
+      "Notes": ""
     },
     "AC": {
-        "Value": 12,
-        "Notes": ""
+      "Value": 12,
+      "Notes": ""
     },
-    "Speed": ["30 ft."],
+    "Speed": [
+      "30 ft."
+    ],
     "Abilities": {
-        "Str": 10,
-        "Dex": 15,
-        "Con": 14,
-        "Cha": 8,
-        "Int": 16,
-        "Wis": 12
+      "Str": 10,
+      "Dex": 15,
+      "Con": 14,
+      "Cha": 8,
+      "Int": 16,
+      "Wis": 12
     },
     "Saves": [
       {
@@ -184,7 +348,13 @@
       }
     ],
     "Senses": [],
-    "Languages": ["Common", "Elvish", "Draconic", "Dwarvish", "Goblin"],
+    "Languages": [
+      "Common",
+      "Elvish",
+      "Draconic",
+      "Dwarvish",
+      "Goblin"
+    ],
     "Actions": [],
     "Reactions": [],
     "LegendaryActions": [],

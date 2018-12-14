@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Amphibious",
+    "Content": "You can breathe air and water.",
+    "Usage": ""
+  },
+  {
+    "Name": "Acid Resistance",
+    "Content": "You have resistance to acid damage.",
+    "Usage": ""
+  }
+]
