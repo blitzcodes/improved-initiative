@@ -1,5 +1,6 @@
 export class Importer {
-    constructor(protected domElement: Element) { }
+    constructor(protected domElement: Element) {
+    }
 
     public getString(selector) {
         return $(this.domElement).find(selector).html() || "";
@@ -16,7 +17,7 @@ export class Importer {
     public getValueAndNotes(selector: string) {
         const matches = this.getString(selector).match(/([\d]+) ?(.*)/);
         if (!matches) {
-            return { Value: 0, Notes: "" };
+            return {Value: 0, Notes: ""};
         }
         const [, value, notes] = matches;
         return {
@@ -36,7 +37,9 @@ export class Importer {
     public getCommaSeparatedModifiers(selector: string) {
         let entries = this.getCommaSeparatedStrings(selector);
         return entries.map(e => {
-            let nameAndModifier = e.split(" ");
+            // The modifier, if present, must either be a + or - value which can then be parsed. 0 values aren't included in the exports.
+            let nameAndModifier = e.indexOf("+") !== -1 ? e.split("+") : e.split("-");
+
             return {
                 Name: nameAndModifier[0],
                 Modifier: parseInt(nameAndModifier[1])

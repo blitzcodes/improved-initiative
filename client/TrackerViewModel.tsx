@@ -48,7 +48,7 @@ export class TrackerViewModel {
     public EncounterToolbar = BuildEncounterCommandList(this.EncounterCommander, this.LibrariesCommander.SaveEncounter);
 
     public CombatantViewModels = ko.observableArray<CombatantViewModel>([]);
-    public TutorialVisible = ko.observable(!Store.Load(Store.User, "SkipIntro"));
+    public TutorialVisible = false;//ko.observable(!Store.Load(Store.User, "SkipIntro"));
     public SettingsVisible = ko.observable(false);
     public LibrariesVisible = ko.observable(true);
     public ToolbarWide = ko.observable(false);
@@ -164,7 +164,7 @@ export class TrackerViewModel {
     });
 
     public BlurVisible = ko.pureComputed(() =>
-        this.TutorialVisible() ||
+        // this.TutorialVisible() ||
         this.SettingsVisible()
     );
 
@@ -216,13 +216,13 @@ export class TrackerViewModel {
         this.Encounter.EndEncounter();
         this.EncounterCommander.ShowLibraries();
         this.SettingsVisible(false);
-        this.TutorialVisible(true);
+        // this.TutorialVisible(true);
     }
 
     public ImportEncounterIfAvailable = () => {
         const encounter = env.PostedEncounter;
         if (encounter && this.Encounter.Combatants().length === 0) {
-            this.TutorialVisible(false);
+            // this.TutorialVisible(false);
             this.Encounter.ImportEncounter(encounter);
         }
     }
@@ -342,7 +342,7 @@ export class TrackerViewModel {
 
     private displayPrivacyNotificationIfNeeded = () => {
         if (Store.Load(Store.User, "AllowTracking") == null) {
-            this.ReviewPrivacyPolicy();
+            // this.ReviewPrivacyPolicy();
         }
     }
 }

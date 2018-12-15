@@ -2,10 +2,10 @@ import * as ko from "knockout";
 import * as _ from "lodash";
 import * as Mousetrap from "mousetrap";
 
-import { HpVerbosityOption, PlayerViewSettings } from "../../common/PlayerViewSettings";
-import { Command } from "../Commands/Command";
-import { CommandSetting } from "../Commands/CommandSetting";
-import { Store } from "../Utility/Store";
+import {HpVerbosityOption, PlayerViewSettings} from "../../common/PlayerViewSettings";
+import {Command} from "../Commands/Command";
+import {CommandSetting} from "../Commands/CommandSetting";
+import {Store} from "../Utility/Store";
 
 export const CurrentSettings = ko.observable<Settings>();
 export const AutoGroupInitiativeOptions = ["None", "By Name", "Side Initiative"];
@@ -40,24 +40,24 @@ export function getDefaultSettings(): Settings {
     return {
         Commands: [],
         Rules: {
-            RollMonsterHp: false,
-            AllowNegativeHP: false,
+            RollMonsterHp: true,
+            AllowNegativeHP: true,
             AutoCheckConcentration: true,
             AutoGroupInitiative: "None"
         },
         TrackerView: {
-            DisplayRoundCounter: false,
-            DisplayTurnTimer: false,
-            DisplayDifficulty: false
+            DisplayRoundCounter: true,
+            DisplayTurnTimer: true,
+            DisplayDifficulty: true
         },
         PlayerView: {
-            ActiveCombatantOnTop: false,
+            ActiveCombatantOnTop: true,
             AllowPlayerSuggestions: false,
             MonsterHPVerbosity: "Colored Label",
             PlayerHPVerbosity: "Actual HP",
-            HideMonstersOutsideEncounter: false,
-            DisplayRoundCounter: false,
-            DisplayTurnTimer: false,
+            HideMonstersOutsideEncounter: true,
+            DisplayRoundCounter: true,
+            DisplayTurnTimer: true,
             DisplayPortraits: false,
             SplashPortraits: false,
             CustomCSS: "",
@@ -90,26 +90,13 @@ function getLegacySettings(): Settings {
     return {
         Commands: commands,
         Rules: {
-            ...defaultSettings.Rules,
-            RollMonsterHp: getLegacySetting<boolean>("RollMonsterHP", false),
-            AllowNegativeHP: getLegacySetting<boolean>("AllowNegativeHP", false),
-            AutoCheckConcentration: getLegacySetting<boolean>("AutoCheckConcentration", true),
-            AutoGroupInitiative: getLegacySetting<AutoGroupInitiativeOption>("AutoGroupInitiative", "None")
+            ...defaultSettings.Rules
         },
         TrackerView: {
-            ...defaultSettings.TrackerView,
-            DisplayRoundCounter: getLegacySetting<boolean>("DisplayRoundCounter", false),
-            DisplayTurnTimer: getLegacySetting<boolean>("DisplayTurnTimer", false),
-            DisplayDifficulty: getLegacySetting<boolean>("DisplayDifficulty", false)
+            ...defaultSettings.TrackerView
         },
         PlayerView: {
-            ...defaultSettings.PlayerView,
-            AllowPlayerSuggestions: getLegacySetting<boolean>("PlayerViewAllowPlayerSuggestions", false),
-            ActiveCombatantOnTop: getLegacySetting<boolean>("ActiveCombatantOnTop", false),
-            MonsterHPVerbosity: getLegacySetting<HpVerbosityOption>("MonsterHPVerbosity", "Colored Label"),
-            HideMonstersOutsideEncounter: getLegacySetting<boolean>("HideMonstersOutsideEncounter", false),
-            DisplayRoundCounter: getLegacySetting<boolean>("PlayerViewDisplayRoundCounter", false),
-            DisplayTurnTimer: getLegacySetting<boolean>("PlayerViewDisplayTurnTimer", false),
+            ...defaultSettings.PlayerView
         },
         Version: defaultSettings.Version
     };
