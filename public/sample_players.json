@@ -1,16 +1,19 @@
 [
   {
+    "Version": "2.0.1",
+    "Player": "player",
     "Name": "Da'sani Watah",
-    "Type": "Genasi Death Cleric",
+    "Type": "Female Genasi Death Cleric, Chaotic Neutral",
+    "Challenge": 4,
     "HP": {
       "Value": 39,
       "Notes": ""
     },
-    "InitiativeModifier": 1,
-    "InitiativeAdvantage": false,
+    "InitiativeModifier": 0,
+    "InitiativeAdvantage": true,
     "AC": {
-      "Value": 18,
-      "Notes": "(chain mail, arrow-catching shield)"
+      "Value": 19,
+      "Notes": "(splint mail, arrow-catching shield)"
     },
     "Speed": [
       "30 ft.",
@@ -125,7 +128,7 @@
       }
     ],
     "Senses": [
-      "Passive Perception): 14",
+      "Passive Perception: 14",
       "Passive Investigation: 10",
       "Passive Insight: 14"
     ],
@@ -145,10 +148,6 @@
       {
         "Name": "Divine Domain: Death",
         "Content": "You choose a divine domain that grants you additional spells and other features related to your deity."
-      },
-      {
-        "Name": "Bonus Proficiency",
-        "Content": "You gain proficiency with martial weapons."
       },
       {
         "Name": "Reaper",
@@ -177,229 +176,451 @@
     ],
     "Actions": [
       {
+        "Name": "Morningstar of Warning",
+        "Content": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage.\n\n\nThis magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can’t be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins."
+      },
+      {
+        "Name": "Warhammer",
+        "Content": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) bludgeoning damage.\n\nVersatile: 8 (1d10 + 3) damage if used with two hands."
+      },
+      {
+        "Name": "Light Crossbow",
+        "Content": "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: (1d8+1) piercing damage."
+      },
+      {
         "Name": "Channel Divinity: Turn Undead\n",
         "Content": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a WIS saving throw (DC 14). If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
       },
       {
         "Name": "Cleric Spells",
-        "Content": "Cantrips\n\nGuidance\nLight\nShape Water\nSpare the Dying\nThorn Whip\nToll the Dead\nWord of Radiance\n\n1st\nCeremony\nCommand\nFalse Life\nGuiding Bolt\nRay of Sickness\n\n2nd\nBlindness/Deafness\nCommand (+1 target)\nCreate or Destroy Water\nFalse Life (1d4+9)\nGuiding Bolt (5d6)\nPrayer of Healing\nRay of Enfeeblement\nRay of Sickness (3d8)\nSpiritual Weapon"
+        "Usage": "+4 Mod., +6 Spell Attack, Save DC 14",
+        "Content": "Cantrips\n\nGuidance\nLight\nShape Water\nSpare the Dying\nThorn Whip\nToll the Dead\nWord of Radiance\n\n\n1st\nCeremony\nCommand\nFalse Life\nGuiding Bolt\nRay of Sickness\n\n\n2nd\nBlindness/Deafness\nCommand (+1 target)\nCreate or Destroy Water\nFalse Life (1d4+9)\nGuiding Bolt (5d6)\nPrayer of Healing\nRay of Enfeeblement\nRay of Sickness (3d8)\nSpiritual Weapon"
       }
-    ]
+    ],
+    "Description": "Hermit\nFeature: Discovery\nThe quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society."
   },
   {
-    "Name": "Gregorr",
-    "Type": "Human Fighter",
+    "Version": "2.0.1",
+    "Player": "player",
+    "Name": "Lance",
+    "Type": "Male Variant Aasimar Paladin, Chaotic Neutral",
+    "Challenge": 4,
     "HP": {
-      "Value": 12,
+      "Value": 40,
       "Notes": ""
     },
+    "Description": "",
+    "InitiativeModifier": 0,
+    "InitiativeAdvantage": false,
     "AC": {
-      "Value": 17,
-      "Notes": "(chain mail)"
+      "Value": 20,
+      "Notes": "(splint mail, shield +1)"
     },
     "Speed": [
-      "30 ft."
+      "30 ft.",
+      "Fly 60 ft."
     ],
     "Abilities": {
-      "Str": 16,
-      "Dex": 9,
-      "Con": 15,
-      "Cha": 14,
-      "Int": 11,
-      "Wis": 13
+      "Str": 19,
+      "Dex": 14,
+      "Con": 16,
+      "Int": 10,
+      "Wis": 15,
+      "Cha": 14
     },
     "Saves": [
       {
         "Name": "Str",
-        "Modifier": 5
+        "Modifier": 4
+      },
+      {
+        "Name": "Dex",
+        "Modifier": 2
       },
       {
         "Name": "Con",
+        "Modifier": 3
+      },
+      {
+        "Name": "Int",
+        "Modifier": 0
+      },
+      {
+        "Name": "Wis",
+        "Modifier": 4
+      },
+      {
+        "Name": "Cha",
         "Modifier": 4
       }
     ],
     "Skills": [
       {
-        "Name": "Perception",
-        "Modifier": 3
+        "Name": "Acrobatics (Dex)",
+        "Modifier": 2
       },
       {
-        "Name": "Insight",
-        "Modifier": 1
-      }
-    ],
-    "Senses": [],
-    "Languages": [
-      "Common",
-      "Draconic",
-      "Dwarvish"
-    ],
-    "Actions": [],
-    "Reactions": [],
-    "LegendaryActions": [],
-    "Player": "player",
-    "Challenge": "1"
-  },
-  {
-    "Name": "Shem",
-    "Type": "Hill Dwarf Cleric",
-    "HP": {
-      "Value": 11,
-      "Notes": ""
-    },
-    "AC": {
-      "Value": 18,
-      "Notes": "(chain mail, shield)"
-    },
-    "Speed": [
-      "25 ft."
-    ],
-    "Abilities": {
-      "Str": 14,
-      "Dex": 8,
-      "Con": 15,
-      "Cha": 12,
-      "Int": 10,
-      "Wis": 16
-    },
-    "Saves": [
-      {
-        "Name": "Wis",
-        "Modifier": 5
+        "Name": "Animal Handling (Wis)",
+        "Modifier": 2
       },
       {
-        "Name": "Cha",
-        "Modifier": 3
-      }
-    ],
-    "Skills": [
-      {
-        "Name": "Perception",
-        "Modifier": 3
-      },
-      {
-        "Name": "Insight",
-        "Modifier": 3
-      }
-    ],
-    "Senses": [],
-    "Languages": [
-      "Common",
-      "Dwarvish"
-    ],
-    "Actions": [],
-    "Reactions": [],
-    "LegendaryActions": [],
-    "Player": "player",
-    "Challenge": "1"
-  },
-  {
-    "Name": "Underfoot",
-    "Type": "Lightfoot Halfling Rogue",
-    "HP": {
-      "Value": 9,
-      "Notes": ""
-    },
-    "AC": {
-      "Value": 14,
-      "Notes": "(leather armor)"
-    },
-    "Speed": [
-      "25 ft."
-    ],
-    "Abilities": {
-      "Str": 8,
-      "Dex": 16,
-      "Con": 12,
-      "Cha": 16,
-      "Int": 13,
-      "Wis": 10
-    },
-    "Saves": [
-      {
-        "Name": "Dex",
-        "Modifier": 5
-      },
-      {
-        "Name": "Int",
-        "Modifier": 3
-      }
-    ],
-    "Skills": [
-      {
-        "Name": "Perception",
+        "Name": "Arcana (Int)",
         "Modifier": 0
       },
       {
-        "Name": "Insight",
+        "Name": "Athletics (Str)",
+        "Modifier": 6
+      },
+      {
+        "Name": "Deception (Cha)",
+        "Modifier": 2
+      },
+      {
+        "Name": "History (Int)",
         "Modifier": 0
-      }
-    ],
-    "Senses": [],
-    "Languages": [
-      "Common",
-      "Halfling"
-    ],
-    "Actions": [],
-    "Reactions": [],
-    "LegendaryActions": [],
-    "Player": "player",
-    "Challenge": "1"
-  },
-  {
-    "Name": "Ellumyr",
-    "Type": "High Elf Wizard",
-    "HP": {
-      "Value": 8,
-      "Notes": ""
-    },
-    "AC": {
-      "Value": 12,
-      "Notes": ""
-    },
-    "Speed": [
-      "30 ft."
-    ],
-    "Abilities": {
-      "Str": 10,
-      "Dex": 15,
-      "Con": 14,
-      "Cha": 8,
-      "Int": 16,
-      "Wis": 12
-    },
-    "Saves": [
-      {
-        "Name": "Int",
-        "Modifier": 5
       },
       {
-        "Name": "Wis",
-        "Modifier": 3
-      }
-    ],
-    "Skills": [
-      {
-        "Name": "Perception",
-        "Modifier": 3
+        "Name": "Insight (Wis)",
+        "Modifier": 4
       },
       {
-        "Name": "Insight",
-        "Modifier": 3
+        "Name": "Intimidation (Cha)",
+        "Modifier": 0
+      },
+      {
+        "Name": "Investigation (Int)",
+        "Modifier": 0
+      },
+      {
+        "Name": "Medicine (Wis)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Nature (Int)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Perception (Wis)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Performance (Cha)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Persuasion (Cha)",
+        "Modifier": 4
+      },
+      {
+        "Name": "Religion (Int)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Slight of Hand (Dex)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Stealth (Dex)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Survival (Wis)",
+        "Modifier": 2
       }
     ],
-    "Senses": [],
+    "Senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception: 12",
+      "Passive Investigation: 10",
+      "Passive Insight: 14"
+    ],
     "Languages": [
       "Common",
       "Elvish",
-      "Draconic",
-      "Dwarvish",
-      "Goblin"
+      "Celestial",
+      "Dwarvish"
     ],
-    "Actions": [],
-    "Reactions": [],
-    "LegendaryActions": [],
+    "DamageResistances": [
+      "Necrotic",
+      "Radiant"
+    ],
+    "DamageImmunities": [
+      "Disease"
+    ],
+    "Traits": [
+      {
+        "Name": "Fighting Style",
+        "Usage": "Dueling",
+        "Content": "You adopt a style of fighting as your specialty. You gain a +2 bonus to damage when wielding only a weapon in one hand."
+      },
+      {
+        "Name": "Spellcasting",
+        "Content": "You can cast prepared paladin spells using CHA as your spellcasting modifier (Spell DC 12, Spell Attack +4). You can use a holy symbol as a spellcasting focus."
+      },
+      {
+        "Name": "Oath Spells",
+        "Content": "You gain oath spells based on your level that are always prepared and don't count against your daily number of prepared spells."
+      },
+      {
+        "Name": "Celestial Legacy",
+        "Content": "You know the light cantrip. [3rd] You can cast lesser restoration once per long rest. [5th] You can cast daylight once per long rest. CHA is your spellcasting ability."
+      },
+      {
+        "Name": "Celestial Resistance",
+        "Content": "You have resistance to necrotic damage and radiant damage."
+      },
+      {
+        "Name": "Divine Health",
+        "Content": "You are immune to disease."
+      },
+      {
+        "Name": "Darkvision",
+        "Content": "You can see in darkness (shades of gray) up to 60 ft."
+      }
+    ],
+    "Actions": [
+      {
+        "Name": "Dagger",
+        "Content": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4+6) piercing damage."
+      },
+      {
+        "Name": "Longsword + 1",
+        "Content": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d8+7) slashing damage.\n\nVersatile: 8 (1d10+7) slashing damage if used with two hands."
+      },
+      {
+        "Name": "Channel Divinity",
+        "Content": "Your oath allows you to channel divine energy to fuel magical effects. When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again. Some Channel Divinity effects require saving throws (DC 12)."
+      },
+      {
+        "Name": "Channel Divinity: Abjure Enemy",
+        "Content": "As an action, you can choose one creature within 60 ft. of you that you can see to make a WIS saving throw (12). Fiends and undead have disadvantage on this saving throw. On failure, the creature is frightened and its speed is reduced to 0 (and it can't benefit from bonuses to speed) for 1 minute or until it takes any damage. On success, the creature’s speed is halved for 1 minute or until the creature takes any damage."
+      },
+      {
+        "Name": "Channel Divinity: Vow of Enmity",
+        "Content": "As a bonus action, you can choose a creature within 10 ft. and gain advantage on attack rolls against it for 1 minute or until it drops to 0 HP or falls unconscious."
+      },
+      {
+        "Name": "Divine Sense",
+        "Content": "As an action, you can detect good and evil. Until the end of your next turn, you can sense anything affected by the hallow spell or know the location of any celestial, fiend, undead within 60 ft. that is not behind total cover. You can use this feature 3 times per long rest."
+      },
+      {
+        "Name": "Divine Smite (Special)",
+        "Content": "When you hit with a melee weapon attack, you can expend one spell slot to deal 2d8 extra radiant damage to the target plus 1d8 for each spell level higher than 1st (max 5d8) and plus 1d8 against undead or fiends."
+      },
+      {
+        "Name": "Lay on Hands",
+        "Content": "You have a pool of healing power that can restore 20 HP per long rest. As an action, you can touch a creature to restore any number of HP remaining in the pool, or 5 HP to either cure a disease or neutralize a poison affecting the creature.",
+        "Usage": "20 points (5 * Level)"
+      },
+      {
+        "Name": "Paladin Spells",
+        "Usage": "+2 Mod., +4 Spell Attack, Save DC 12",
+        "Content": "Cantrip\nLight\n\n\n1st\nBane\nCure Wounds\nDivine Favor\nHunter's Mark\nShield of Faith\nThunderous Smite\n\n\n2nd\nLesser Restoration"
+      }
+    ]
+  },
+  {
+    "Version": "2.0.1",
     "Player": "player",
-    "Challenge": "1"
+    "Name": "Piper",
+    "Type": "Female Kenku Rouge, Chaotic Neutral",
+    "Challenge": 4,
+    "HP": {
+      "Value": 31,
+      "Notes": ""
+    },
+    "Description": "",
+    "InitiativeModifier": 0,
+    "InitiativeAdvantage": false,
+    "AC": {
+      "Value": 17,
+      "Notes": "(Mariner's  studded leather)"
+    },
+    "Speed": [
+      "30 ft.",
+      "Swim 30 ft."
+    ],
+    "Abilities": {
+      "Str": 14,
+      "Dex": 20,
+      "Con": 14,
+      "Int": 17,
+      "Wis": 12,
+      "Cha": 10
+    },
+    "Saves": [
+      {
+        "Name": "Str",
+        "Modifier": 2
+      },
+      {
+        "Name": "Dex",
+        "Modifier": 7
+      },
+      {
+        "Name": "Con",
+        "Modifier": 2
+      },
+      {
+        "Name": "Int",
+        "Modifier": 5
+      },
+      {
+        "Name": "Wis",
+        "Modifier": 1
+      },
+      {
+        "Name": "Cha",
+        "Modifier": 4
+      }
+    ],
+    "Skills": [
+      {
+        "Name": "Acrobatics (Dex)",
+        "Modifier": 7
+      },
+      {
+        "Name": "Animal Handling (Wis)",
+        "Modifier": 1
+      },
+      {
+        "Name": "Arcana (Int)",
+        "Modifier": 3
+      },
+      {
+        "Name": "Athletics (Str)",
+        "Modifier": 4
+      },
+      {
+        "Name": "Deception (Cha)",
+        "Modifier": 2
+      },
+      {
+        "Name": "History (Int)",
+        "Modifier": 3
+      },
+      {
+        "Name": "Insight (Wis)",
+        "Modifier": 1
+      },
+      {
+        "Name": "Intimidation (Cha)",
+        "Modifier": 2
+      },
+      {
+        "Name": "Investigation (Int)",
+        "Modifier": 5
+      },
+      {
+        "Name": "Medicine (Wis)",
+        "Modifier": 1
+      },
+      {
+        "Name": "Nature (Int)",
+        "Modifier": 3
+      },
+      {
+        "Name": "Perception (Wis)",
+        "Modifier": 3
+      },
+      {
+        "Name": "Performance (Cha)",
+        "Modifier": 0
+      },
+      {
+        "Name": "Persuasion (Cha)",
+        "Modifier": 0
+      },
+      {
+        "Name": "Religion (Int)",
+        "Modifier": 3
+      },
+      {
+        "Name": "Slight of Hand (Dex)",
+        "Modifier": 9
+      },
+      {
+        "Name": "Stealth (Dex)",
+        "Modifier": 7
+      },
+      {
+        "Name": "Survival (Wis)",
+        "Modifier": 1
+      }
+    ],
+    "Senses": [
+      "Passive Perception: 13",
+      "Passive Investigation: 15",
+      "Passive Insight: 11"
+    ],
+    "Languages": [
+      "Common",
+      "Auran",
+      "Thieves Cant"
+    ],
+    "DamageResistances": [
+    ],
+    "DamageImmunities": [
+    ],
+    "Traits": [
+      {
+        "Name": "Expertise",
+        "Content": "Your proficiency bonus is doubled for any ability check you make for two chosen proficiencies. [6th] Choose two additional proficiencies."
+      },
+      {
+        "Name": "Thieves’ Cant",
+        "Content": "You have learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. It takes four times longer to convey such a message than it does to speak the same idea plainly."
+      },
+      {
+        "Name": "Roguish Archetype",
+        "Usage": "Arcane Trickster",
+        "Content": "You can cast known wizard spells using INT as your spellcasting modifier (Spell DC 13, Spell Attack +5)."
+      },
+      {
+        "Name": "Mage Hand Legerdemain",
+        "Content": "When you cast mage hand, you can make the spectral hand invisible, stow or retrieve objects, or use thieves’ tools to pick locks and disarm traps at range. You can disguise this with a Sleight of Hand check, and you can use the bonus action granted by your Cunning Action to control the hand."
+      },
+      {
+        "Name": "Expert Forgery",
+        "Content": "You have advantage on all checks made to produce forgeries or duplicates of existing objects."
+      },
+      {
+        "Name": "Kenku Training",
+        "Content": "You are proficient in your choice of two of the following skills: Acrobatics, Deception, Stealth, and Sleight of Hand."
+      },
+      {
+        "Name": "Mimicry",
+        "Content": "You can mimic sounds you have heard. A creature can tell these sounds are imitations with an Insight check opposed by your Deception check."
+      }
+    ],
+    "Actions": [
+      {
+        "Name": "Dagger",
+        "Content": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4+6) piercing damage."
+      },
+      {
+        "Name": "Rapier",
+        "Content": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+        "Usage": ""
+      },
+      {
+        "Name": "Shortbow",
+        "Content": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+        "Usage": ""
+      },
+      {
+        "Name": "Cunning Action",
+        "Content": "You can take a bonus action on each of your turns to take the Dash, Disengage, or Hide action."
+      },
+      {
+        "Name": "Sneak Attack (Special)",
+        "Content": "Once per turn, you can deal an extra 2d6 damage to one creature you hit with an attack with a finesse or ranged weapon if you have advantage on the attack roll. You don’t need advantage on the attack roll if another enemy of the target is within 5 ft. of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll."
+      },
+      {
+        "Name": "Spellcaster",
+        "Usage": "+3 Mod., +5 Spell Attack, Save DC 13",
+        "Content": "Cantrip\nFire Bolt\nLight\nMage Hand\n\n\n1st\nCharm Person\nHideous Laughter\nMagic Missile\nSleep"
+      }
+    ]
   }
 ]

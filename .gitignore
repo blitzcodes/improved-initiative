@@ -13,3 +13,8 @@ public/webfonts/*
 !Gruntfile.js
 !webpack.*.js
 !test/test.js
+.idea/
+node_modules/
+public/css/
+public/js/
+yarn.lock
